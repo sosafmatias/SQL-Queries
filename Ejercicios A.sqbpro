@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="D:/Data Science/DS Avanzado 2020/Datasets base de datos/NorthwindSQLite.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="6188"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,9:mainCustomers"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="Alphabetical list of products" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="73"/><column index="2" value="206"/><column index="3" value="74"/><column index="4" value="82"/><column index="5" value="126"/><column index="6" value="65"/><column index="7" value="89"/><column index="8" value="94"/><column index="9" value="95"/><column index="10" value="91"/><column index="11" value="103"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes><y_axis name="" line_style="0" point_shape="0" colour="#000000" active="0"/><y_axis name="CategoryID" line_style="1" point_shape="5" colour="#004586" active="0"/><y_axis name="UnitPrice" line_style="1" point_shape="5" colour="#ff420e" active="0"/><y2_axis name="" line_style="0" point_shape="0" colour="#000000" active="0"/></plot_y_axes><global_filter/></table><table schema="main" name="Customers" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="2" mode="0"/></sort><column_widths><column index="1" value="84"/><column index="2" value="215"/><column index="3" value="143"/><column index="4" value="182"/><column index="5" value="280"/><column index="6" value="92"/><column index="7" value="89"/><column index="8" value="80"/><column index="9" value="74"/><column index="10" value="110"/><column index="11" value="110"/></column_widths><filter_values><column index="9" value="USA"/></filter_values><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Employees" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="83"/><column index="2" value="71"/><column index="3" value="71"/><column index="4" value="147"/><column index="5" value="108"/><column index="6" value="73"/><column index="7" value="73"/><column index="8" value="152"/><column index="9" value="61"/><column index="10" value="52"/><column index="11" value="80"/><column index="12" value="60"/><column index="13" value="96"/><column index="14" value="70"/><column index="15" value="46"/><column index="16" value="300"/><column index="17" value="75"/><column index="18" value="253"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Order Details" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="60"/><column index="2" value="73"/><column index="3" value="65"/><column index="4" value="64"/><column index="5" value="64"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Orders" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="59"/><column index="2" value="84"/><column index="3" value="83"/><column index="4" value="154"/><column index="5" value="154"/><column index="6" value="154"/><column index="7" value="55"/><column index="8" value="53"/><column index="9" value="213"/><column index="10" value="280"/><column index="11" value="92"/><column index="12" value="89"/><column index="13" value="107"/><column index="14" value="87"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Orders Qry" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="59"/><column index="2" value="84"/><column index="3" value="83"/><column index="4" value="154"/><column index="5" value="154"/><column index="6" value="154"/><column index="7" value="55"/><column index="8" value="53"/><column index="9" value="213"/><column index="10" value="280"/><column index="11" value="92"/><column index="12" value="89"/><column index="13" value="107"/><column index="14" value="87"/><column index="15" value="213"/><column index="16" value="280"/><column index="17" value="92"/><column index="18" value="89"/><column index="19" value="80"/><column index="20" value="74"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Products" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="7" mode="0"/></sort><column_widths><column index="1" value="73"/><column index="2" value="206"/><column index="3" value="74"/><column index="4" value="82"/><column index="5" value="127"/><column index="6" value="65"/><column index="7" value="89"/><column index="8" value="94"/><column index="9" value="95"/><column index="10" value="91"/></column_widths><filter_values><column index="10" value="1"/></filter_values><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Products Above Average Price" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="190"/><column index="2" value="65"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Suppliers" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="2" mode="0"/></sort><column_widths><column index="1" value="74"/><column index="2" value="238"/><column index="3" value="165"/><column index="4" value="170"/><column index="5" value="196"/><column index="6" value="86"/><column index="7" value="53"/><column index="8" value="80"/><column index="9" value="75"/><column index="10" value="96"/><column index="11" value="96"/><column index="12" value="300"/></column_widths><filter_values><column index="9" value="uk"/></filter_values><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">/*Ejercicio 1: Seleccionar todos los campos de la tabla clientes, ordenado por nombre del contacto de la compañía, alfabéticamente*/
+
+SELECT *
+
+FROM Customers
+
+ORDER BY Customers.ContactName
+</sql><sql name="SQL 2">/*Ejercicio 2: Seleccionar todos los campos de la tabla órdenes, ordenados por fecha de la orden, descendentemente.*/
+
+SELECT *
+
+FROM Orders
+
+ORDER BY Orders.OrderDate DESC</sql><sql name="SQL 3">/*Ejercicio 3: Seleccionar todos los campos de la tabla detalle de la orden, ordenada por cantidad pedida, ascendentemente*/
+
+SELECT *
+
+FROM &quot;Order Details&quot;
+
+ORDER BY &quot;Order details&quot;.Quantity ASC</sql><sql name="SQL 4">/*Ejercicio 4: Obtener todos los productos, cuyo nombre comienzan con la letra P y tienen un precio unitario comprendido entre 10 y 120.*/
+
+SELECT Products.ProductName
+
+FROM Products
+
+WHERE Products.UnitPrice BETWEEN 10 and 20
+	AND Products.ProductName LIKE &quot;P%&quot;</sql><sql name="SQL 5">/*Ejercicio 5: Obtener todos los clientes de los países de: USA, Francia y UK*/
+
+SELECT Customers.ContactName
+
+FROM Customers
+
+WHERE Customers.Country IN (&quot;USA&quot;,&quot;France&quot;,&quot;UK&quot;)</sql><sql name="SQL 6">/*Ejercicio 6: Obtener todos los productos descontinuados y sin stock, que pertenecen a las categorías 1, 3, 4 y 7.*/
+
+SELECT Products.ProductName
+
+FROM Products
+
+WHERE Products.Discontinued = 1 
+	AND Products.UnitsInStock=0
+	AND Products.CategoryID in (1,3,4,7)</sql><sql name="SQL 7">/*Ejercicio 7: Obtener todas las ordenes hechas por el empleado con código: 2, 5 y 7 en el año 1996*/
+
+SELECT Orders.OrderID, Orders.EmployeeID, Orders.OrderDate
+
+FROM Orders
+
+WHERE Orders.EmployeeID in (2, 5, 7)
+	AND Orders.OrderDate LIKE &quot;1996%&quot;</sql><sql name="SQL 8">/*Ejercicio 8: Seleccionar todos los clientes que cuenten con FAX*/
+
+SELECT Customers.ContactName
+
+FROM Customers
+
+WHERE Customers.Fax IS NOT Null</sql><sql name="SQL 9">/*Ejercicio 9: Seleccionar todos los clientes que no cuenten con FAX, del país de USA*/
+
+SELECT Customers.ContactName
+
+FROM Customers
+
+WHERE Customers.Fax IS Null
+
+	AND Customers.Country = &quot;USA&quot;</sql><sql name="SQL 10">/*Ejercicio 10: Seleccionar todos los empleados que cuentan con un jefe.*/
+
+SELECT Employees.EmployeeID, Employees.FirstName, Employees.LastName, Employees.ReportsTo
+
+FROM Employees
+
+WHERE Employees.ReportsTo IS NOT NULL</sql><sql name="SQL 11">/*Ejercicio 11: Seleccionar todos los campos del cliente, cuya compañía empiece con la
+letra de A hasta la D y pertenezcan al país de USA, ordenarlos por la dirección.*/
+
+SELECT *
+
+FROM Customers
+
+WHERE Customers.Country = &quot;USA&quot; 
+
+	AND	substr(Customers.CompanyName, 1, 1) BETWEEN &quot;A&quot; AND &quot;D&quot;
+	
+ORDER BY Customers.Address ASC</sql><sql name="SQL 12">/*Ejercicio 12: Seleccionar todos los campos del proveedor, cuya compañía no comience
+con las letras de la B a la G, y pertenezca al país UK, ordenarlos por nombre de la compañía*/
+
+SELECT *
+
+FROM Suppliers
+
+WHERE Suppliers.Country = &quot;UK&quot; 
+	AND substr(Suppliers.CompanyName, 1, 1) NOT BETWEEN &quot;B&quot; AND &quot;G&quot;</sql><sql name="SQL 13">/*Ejercicio 13: Seleccionar los productos vigentes cuyos precios unitarios están entre 35
+y 250, sin stock en almacén. Pertenecientes a las categorías 1, 3, 4, 7 y 8, que son
+distribuidos por los proveedores 2, 4, 6, 7 y 9.*/
+
+SELECT Products.ProductName
+
+FROM Products
+
+WHERE Products.UnitPrice BETWEEN 35 AND 250
+	AND Products.UnitsInStock = 0
+	AND Products.CategoryID IN (1,3,4,7,8)
+	AND Products.SupplierID IN (2,4,6,7,9)</sql><sql name="SQL 14">/* Ejercicio 14: Seleccionar todos los campos de los productos descontinuados, que
+pertenezcan a los proveedores con códigos: 1, 3, 7, 8 y 9, que tengan stock en
+almacén, y al mismo tiempo que sus precios unitarios estén entre 39 y 190, ordenados
+por código de proveedor y precio unitario de manera ascendente.*/
+
+SELECT *
+
+FROM Products
+
+WHERE Products.Discontinued = 1
+	AND Products.SupplierID IN (1,3,7,8,9)
+	AND Products.UnitsInStock &gt; 0
+	AND Products.UnitPrice BETWEEN 39 AND 190
+	ORDER BY Products.SupplierID ASC, Products.UnitPrice ASC</sql><sql name="SQL 15">/*Ejercicio 15: Seleccionar los 7 productos con precios más caros, que cuenten con stock en almacén*/
+
+SELECT Products.ProductName
+
+FROM Products
+
+WHERE Products.UnitsInStock &gt; 0
+
+ORDER BY Products.UnitPrice DESC
+
+LIMIT 7</sql><sql name="SQL 16">/*Ejercicio 16: Seleccionar los 9 productos, con menos stock en almacén, que pertenezcan a la categoría 3, 5 y 8*/
+
+SELECT Products.ProductName
+
+FROM Products
+
+WHERE Products.CategoryID IN (3,5,8)
+
+ORDER BY Products.UnitsInStock ASC
+
+LIMIT 9</sql><sql name="SQL 17">/*Ejercicio 17: Seleccionar las órdenes de compra, realizadas por el empleado con código
+entre el 2 y el 5, además de los clientes con códigos que comienzan con las letras de la
+A hasta la G, del 31 de Julio de cualquier año.*/
+
+SELECT Orders.OrderID
+
+FROM Orders
+
+WHERE Orders.EmployeeID BETWEEN 2 AND 5
+	AND substr(Orders.CustomerID,1,1) BETWEEN &quot;A&quot; AND &quot;G&quot;
+	AND Orders.OrderDate LIKE &quot;%07-31%&quot;</sql><sql name="SQL 18">/*Ejercicio 18: Seleccionar las órdenes de compra, realizadas por el empleado con código
+3, de cualquier año pero solo de los últimos 5 meses (agosto - Diciembre).*/
+
+SELECT Orders.OrderID, Orders.EmployeeID, Orders.OrderDate
+
+FROM Orders
+
+WHERE Orders.EmployeeID = 3
+	AND strftime(&quot;%m&quot;, Orders.OrderDate) BETWEEN &quot;08&quot; AND &quot;12&quot;</sql><sql name="SQL 19">/*Ejercicio 19: Seleccionar los detalles de las órdenes de compra, que tengan un monto
+de cantidad pedida entre 10 y 250*/
+
+SELECT *
+
+FROM Orders
+
+JOIN &quot;Order Details&quot; ON
+	&quot;Order Details&quot;.Quantity BETWEEN &quot;10&quot; and &quot;250&quot;</sql><current_tab id="18"/></tab_sql></sqlb_project>

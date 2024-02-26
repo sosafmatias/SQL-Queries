@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="D:/Data Science/DS Avanzado 2020/Datasets base de datos/NorthwindSQLite.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="6188"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,6:mainOrders"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="Alphabetical list of products" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="73"/><column index="2" value="206"/><column index="3" value="74"/><column index="4" value="82"/><column index="5" value="126"/><column index="6" value="65"/><column index="7" value="89"/><column index="8" value="94"/><column index="9" value="95"/><column index="10" value="91"/><column index="11" value="103"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Customers" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="84"/><column index="2" value="215"/><column index="3" value="143"/><column index="4" value="182"/><column index="5" value="280"/><column index="6" value="92"/><column index="7" value="89"/><column index="8" value="80"/><column index="9" value="74"/><column index="10" value="110"/><column index="11" value="110"/></column_widths><filter_values><column index="1" value="vinet"/></filter_values><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Orders" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="59"/><column index="2" value="84"/><column index="3" value="83"/><column index="4" value="154"/><column index="5" value="154"/><column index="6" value="154"/><column index="7" value="55"/><column index="8" value="53"/><column index="9" value="213"/><column index="10" value="280"/><column index="11" value="92"/><column index="12" value="89"/><column index="13" value="107"/><column index="14" value="87"/></column_widths><filter_values><column index="2" value="vinet"/></filter_values><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Orders Qry" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="59"/><column index="2" value="84"/><column index="3" value="83"/><column index="4" value="154"/><column index="5" value="154"/><column index="6" value="154"/><column index="7" value="55"/><column index="8" value="53"/><column index="9" value="213"/><column index="10" value="280"/><column index="11" value="92"/><column index="12" value="89"/><column index="13" value="107"/><column index="14" value="87"/><column index="15" value="213"/><column index="16" value="280"/><column index="17" value="92"/><column index="18" value="89"/><column index="19" value="80"/><column index="20" value="74"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Products" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="73"/><column index="2" value="206"/><column index="3" value="74"/><column index="4" value="82"/><column index="5" value="127"/><column index="6" value="65"/><column index="7" value="89"/><column index="8" value="94"/><column index="9" value="95"/><column index="10" value="91"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">/*Ejercicio 1: Visualizar el máximo y el mínimo precio de los productos por categoría, mostrar el nombre de la categoría.*/
+
+SELECT min (Products.UnitPrice) as Mínimo, max (Products.UnitPrice) as Máximo, Categories.CategoryName
+
+FROM Products
+
+JOIN Categories ON
+	Products.CategoryID = Categories.CategoryID
+	
+GROUP BY Categories.CategoryName</sql><sql name="SQL 2">/*Ejercicio 2: Visualizar el máximo y mínimo precio de los productos por proveedor, mostrar el nombre de la compañía proveedora.*/
+
+SELECT min (Products.UnitPrice) as Mínimo, max (Products.UnitPrice) as Máximo, Suppliers.CompanyName
+
+FROM Products
+
+JOIN Suppliers ON
+	Products.SupplierID = Suppliers.SupplierID
+
+GROUP BY Suppliers.CompanyName
+
+ORDER BY CompanyName</sql><sql name="SQL 3">/*Ejercicio 3: Seleccionar las categorías que tengan más de 5 productos. Mostrar el nombre de la categoría y el número de productos*/
+
+SELECT Categories.CategoryName, count (Products.ProductID) as Cantidad
+
+FROM Categories
+
+JOIN Products ON
+	Categories.CategoryID = Products.CategoryID
+
+GROUP BY CategoryName
+
+HAVING Cantidad &gt; 5</sql><sql name="SQL 4">/*Ejercicio 4: Calcular cuántos clientes existe en cada país.*/
+
+SELECT Customers.Country, count(Customers.Country) as Pais
+
+FROM Customers
+
+WHERE Customers.Country IS NOT NULL
+
+GROUP BY Customers.Country</sql><sql name="SQL 5">/*Ejercicio 5: Calcular cuántos clientes existen en cada ciudad*/
+
+SELECT Customers.City, count (Customers.City) as Cantidad
+
+FROM Customers 
+
+WHERE Customers.City IS NOT NULL
+
+GROUP BY Customers.City</sql><sql name="SQL 7">/*Ejercicio 7: Calcular el stock total de los productos por cada categoría. Mostrar el nombre de la categoría y el stock por categoría.*/
+
+SELECT sum(Products.UnitsInStock) as &quot;En stock&quot;, Categories.CategoryName
+
+FROM Products
+
+JOIN Categories ON
+	Products.CategoryID = Categories.CategoryID
+
+GROUP BY Categories.CategoryName
+</sql><sql name="SQL 8">/*Ejercicio 8: Calcular el stock total de los productos por cada categoría. 
+Mostrar el nombre de la categoría y el stock por categoría. Solamente las categorías 2, 5 y 8*/
+
+SELECT sum(Products.UnitsInStock) as &quot;En stock&quot;, Categories.CategoryName
+
+FROM Products
+
+
+JOIN Categories ON
+	Products.CategoryID = Categories.CategoryID
+	
+WHERE Products.CategoryID IN (2,5,8)
+
+GROUP BY Categories.CategoryName</sql><sql name="SQL 9">/*Ejercicio 9: Obtener el nombre del cliente, nombre del proveedor, nombre del empleado y el nombre de los productos que están en la orden 10250*/
+
+SELECT Customers.CompanyName as NombreCliente, Suppliers.CompanyName as NombreProveedor,
+		Employees.FirstName || &quot; &quot; || Employees.LastName as NombreEmpleado, Products.ProductName as NombreProducto
+FROM Customers
+
+JOIN Orders ON
+	Customers.CustomerID = Orders.CustomerID
+
+JOIN &quot;Order Details&quot; ON
+	Orders.OrderID = &quot;Order Details&quot;.OrderID
+
+JOIN Products ON
+	&quot;Order Details&quot;.ProductID = Products.ProductID
+	
+JOIN Employees ON
+	Orders.EmployeeID = Employees.EmployeeID
+
+JOIN Suppliers ON
+	Products.SupplierID = Suppliers.SupplierID
+
+WHERE Orders.OrderID = 10250</sql><sql name="SQL 10">/*Ejercicio 10: Mostrar el número de órdenes realizadas de cada uno de los clientes por año*/
+
+SELECT count(Orders.OrderID) as Ordenes, Customers.CompanyName as Cliente, strftime(&quot;%Y&quot;, Orders.OrderDate) as Año
+
+FROM Orders
+
+JOIN Customers ON
+	Orders.CustomerID = Customers.CustomerID
+
+GROUP BY Cliente, Año
+ORDER BY Cliente
+</sql><sql name="SQL 11">/*Ejercicio 11: Mostrar el número de órdenes realizadas de cada uno de los empleados en cada año.*/
+
+SELECT count(Orders.OrderID) as Ordenes, Employees.FirstName || &quot; &quot; || Employees.LastName as NombreEmpleado, strftime(&quot;%Y&quot;, Orders.OrderDate) as Año
+
+FROM Orders
+
+JOIN Employees ON
+	Orders.EmployeeID = Employees.EmployeeID
+
+GROUP BY NombreEmpleado, Año
+ORDER BY NombreEmpleado</sql><sql name="SQL 12">/*Ejercicio 12: Mostrar el número de órdenes realizadas de cada uno de los clientes por cada mes y año.*/
+
+SELECT count(Orders.OrderID) as Ordenes, Customers.CompanyName as Cliente, strftime(&quot;%m&quot;, Orders.OrderDate) as Mes, strftime(&quot;%Y&quot;, Orders.OrderDate) as Año
+
+FROM Orders
+
+JOIN Customers ON
+	Orders.CustomerID = Customers.CustomerID
+
+GROUP BY Cliente, Año, mes
+ORDER BY Cliente, Año, Mes</sql><current_tab id="0"/></tab_sql></sqlb_project>
